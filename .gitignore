@@ -1,0 +1,10 @@
+lib/__pycache__/
+*/build/
+*/dist/
+*/venv/
+venv/
+
+# Eclipse IDE project files
+.project
+.pydevproject
+.settings/
