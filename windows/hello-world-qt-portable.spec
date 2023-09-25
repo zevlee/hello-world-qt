@@ -3,11 +3,11 @@
 block_cipher = None
 
 a = Analysis(
-	['../hello-world-qt'],
+	['../helloworldqt.py'],
 	pathex=[],
 	binaries=[],
 	datas=[
-		('../lib', 'lib'),
+		('../helloworldqt', 'helloworldqt'),
 		('../org.example.HelloWorldQt.svg', '.'),
 		('../LICENSE', '.'),
 		('../VERSION', '.')
