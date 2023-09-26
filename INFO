@@ -1,0 +1,5 @@
+#!/bin/sh
+
+APP=hello-world-qt
+NAME="Hello World"
+ICON=org.example.HelloWorldQt.svg
