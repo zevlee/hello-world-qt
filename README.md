@@ -7,80 +7,10 @@ This repository is an easily configurable build system for distributing Python-b
 
 The releases section contains the result of using this repo as-is.
 
-### Building on Windows
-1. MSYS2 is needed to build on Windows. [Get it from the MSYS2 website.](https://www.msys2.org/)
-2. Go to your folder for MSYS2 and run `mingw64.exe`. The following commands will be executed in the console that appears.
-3. Install git.
-```
-pacman -S git
-```
-4. Clone this repository.
-```
-git clone https://github.com/zevlee/hello-world-qt.git
-```
-5. Enter the `windows` directory.
-```
-cd hello-world-qt/windows
-```
-6. Run `bootstrap.sh` to install any missing dependencies.
-```
-./bootstrap.sh
-```
-7. Run `build.sh`.
-```
-./build.sh
-```
-Create a portable executable by adding the portable option
-```
-./build.sh portable
-```
+## [Documentation](/docs/README.md)
 
-### Building on macOS
-1. Homebrew is needed to install Qt. [Get it from the Homebrew website.](https://brew.sh)
-2. Clone this repository.
-```
-git clone https://github.com/zevlee/hello-world-qt.git
-```
-3. Enter the `macos` directory.
-```
-cd hello-world-qt/macos
-```
-4. Run `bootstrap.sh` to install any missing dependencies.
-```
-./bootstrap.sh
-```
-5. Run `build.sh`.
-```
-./build.sh
-```
-Enable code signing by adding the Common Name of the certificate as the first argument. Without this, adhoc signing will be used.
-```
-./build.sh "Developer ID Application: Name Here (TEAMIDHERE)"
-```
-Enable notarization by also adding the name of a stored keychain profile.
-```
-./build.sh "Developer ID Application: Name Here (TEAMIDHERE)" "keychain-profile-here"
-```
-Notarization can alternatively be enabled by adding Apple ID, Team ID, and an app-specific password as subsequent arguments.
-```
-./build.sh "Developer ID Application: Name Here (TEAMIDHERE)" "appleid@here.com" "TEAMIDHERE" "pass-word-goes-here"
-```
+[Building on Windows](/docs/windows.md)
 
-### Building on Linux
-1. Ensure Qt is installed.
-2. Clone this repository.
-```
-git clone https://github.com/zevlee/hello-world-qt.git
-```
-3. Enter the `linux` directory.
-```
-cd hello-world-qt/linux
-```
-4. Run `bootstrap.sh` to install any missing dependencies.
-```
-./bootstrap.sh
-```
-5. Run `build.sh`.
-```
-./build.sh
-```
+[Building on macOS](/docs/macos.md)
+
+[Building on Linux](/docs/linux.md)
