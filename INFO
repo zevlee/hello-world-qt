@@ -1,7 +1,0 @@
-#!/bin/sh
-
-APP=hello-world-qt
-NAME="Hello World"
-ICON=org.example.HelloWorldQt.svg
-AUTHOR="Author Name"
-DESCRIPTION="Hello World Qt"
