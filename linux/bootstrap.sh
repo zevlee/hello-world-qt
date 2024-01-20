@@ -1,3 +1,1 @@
-#!/bin/sh
-
-echo "Done"
+sudo apt install qt6-base-dev
