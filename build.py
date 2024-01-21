@@ -134,7 +134,13 @@ class Build:
         venv = join(self.srcdir, "venv")
         self.logger.info(f"Setting up virtual environment: {venv}")
         self.py = join(venv, PYEXE)
-        create(venv, clear=True, with_pip=True, upgrade_deps=True)
+        create(
+            venv,
+            system_site_packages=True,
+            clear=True,
+            with_pip=True,
+            upgrade_deps=True
+        )
         self.logger.debug(f"Installing pip dependency: pydeployment")
         self._run_command(
             f"{self.py} -m pip install pydeployment",
