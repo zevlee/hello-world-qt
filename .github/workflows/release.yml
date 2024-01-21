@@ -73,7 +73,7 @@ jobs:
           echo 'KEYC=notarytool-profile' >> .env
       - name: Build package
         run: |
-          /usr/local/bin/python3 build.py
+          python3 build.py
       - name: Store the distribution packages
         uses: actions/upload-artifact@v4
         with:
