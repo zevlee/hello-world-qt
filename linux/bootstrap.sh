@@ -1,1 +1,1 @@
-sudo apt install qt6-base-dev
+apt install qt6-base-dev
